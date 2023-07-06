@@ -1,0 +1,21 @@
+export const colors = {
+  GRAY50: "#FAFAFA",
+  GRAY100: "#F5F5F5",
+  GRAY200: "#EEEEEE",
+  GRAY300: "#E0E0E0",
+  GRAY400: "#BDBDBD",
+  GRAY500: "#9E9E9E",
+  // 600 up need white text
+  GRAY600: "#757575",
+  GRAY700: "#616161",
+  GRAY800: "#424242",
+  GRAY900: "#212121",
+
+  RED01: "#ff4040",
+  RED02: "#dc143c",
+
+  STEELBLUE: "#ED820E",
+  ICELIGHT: "#c5d6e5",
+  SAFFRONYELLOW: "#ED820E",
+  SAFFRONYELLOWDARK: "#7A3903",
+};

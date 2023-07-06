@@ -14,7 +14,7 @@ const Routes = () => {
     );
   }, [gotoAdminState]);
 
-  if (false) {
+  if (gotoAdminState) {
     return <AdminStack />;
   } else {
     return <AppStack />;

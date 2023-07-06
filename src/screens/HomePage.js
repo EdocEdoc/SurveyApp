@@ -19,6 +19,15 @@ import { GOTO_ADMIN } from "../redux/actions/app";
 const HomePage = ({ navigation }) => {
   const orientation = useOrientation();
   const dispatch = useDispatch();
+
+  const onGoingAdmin = () => {
+    console.log(
+      "🚀 ~ file: app.js:10 ~ constGOTO_ADMIN= ~ receivedData:",
+      true
+    );
+    dispatch(GOTO_ADMIN(true));
+  };
+
   return (
     <View style={{ flex: 1, backgroundColor: colors.SAFFRONYELLOWDARK }}>
       <View
@@ -29,7 +38,7 @@ const HomePage = ({ navigation }) => {
       >
         <TouchableOpacity
           delayLongPress={5000}
-          onLongPress={() => dispatch(GOTO_ADMIN(true))}
+          onLongPress={onGoingAdmin}
           activeOpacity={0.6}
           style={{
             flex: 1,
@@ -38,13 +47,9 @@ const HomePage = ({ navigation }) => {
             justifyContent: "center",
           }}
         >
-          <Image
-            source={require("../../assets/images/CGM.png")}
-            style={{
-              width: "50%",
-              resizeMode: "contain",
-            }}
-          />
+          <Text style={{ fontWeight: "bold", color: "white", fontSize: 50 }}>
+            SURVEY APP
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate("ClientSurveyScreen")}
